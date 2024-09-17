@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short-Form Video and Attention Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .scale {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Short-Form Video and Attention Survey</h1>
+        <form>
+            <table>
+                <tr>
+                    <th colspan="2">Demographic Information</th>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="text" name="age"></td>
+                </tr>
+                <tr>
+                    <td>Assigned Sex:</td>
+                    <td>
+                        <select name="sex">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Occupation:</td>
+                    <td>
+                        <select name="occupation">
+                            <option value="student">School Student</option>
+                            <option value="undergrad">Undergraduate</option>
+                            <option value="worker">Young Worker</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">Short-Form Video Habits</th>
+                </tr>
+                <tr>
+                    <td>Primary Short-Form Video App:</td>
+                    <td>
+                        <select name="app">
+                            <option value="tiktok">TikTok</option>
+                            <option value="youtube">YouTube Shorts</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="instagram">Instagram Reels</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Average Daily Time Spent on Short-Form Videos:</td>
+                    <td>
+                        <select name="time">
+                            <option value="0-30">0-30 minutes</option>
+                            <option value="31-60">31-60 minutes</option>
+                            <option value="61-90">61-90 minutes</option>
+                            <option value="91-120">91-120 minutes</option>
+                            <option value="above 121">Above 121 minutes</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">Cognitive and Attention-Related Questions (Scale: 1 = Never, 10 = Very Often)</th>
+                </tr>
+                <tr>
+                    <td>1. I get distracted easily when switching between videos.</td>
+                    <td>
+                        <select class="scale" name="question1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2. I cannot concentrate for long after watching short videos.</td>
+                    <td>
+                        <select class="scale" name="question2">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3. I often forget tasks after watching short-form videos.</td>
+                    <td>
+                        <select class="scale" name="question3">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">Mindful Attention Awareness (Scale: 1 = Almost Never, 10 = Almost Always)</th>
+                </tr>
+                <tr>
+                    <td>1. I tend to do tasks automatically without paying attention.</td>
+                    <td>
+                        <select class="scale" name="maas1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2. I find myself preoccupied with the future or the past while watching videos.</td>
+                    <td>
+                        <select class="scale" name="maas2">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3. I rush through activities without being attentive.</td>
+                    <td>
+                        <select class="scale" name="maas3">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
